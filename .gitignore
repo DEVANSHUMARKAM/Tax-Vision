@@ -1,16 +1,16 @@
 # Python
-backend/venv/
-backend/__pycache__/
-backend/**/__pycache__/
-backend/*.pyc
-backend/.env
-backend/data/
-backend/ml/model.pkl
+TV-backend/venv/
+TV-backend/__pycache__/
+TV-backend/**/__pycache__/
+TV-backend/.env
+TV-backend/data/
+TV-backend/ml/model.pkl
+*.pyc
+*.pyo
 
-# React
-frontend/node_modules/
-frontend/build/
-
-# Data files (too large)
+# Node
+TV-frontend/node_modules/
+TV-frontend/build/
+.vscode/
 *.csv
 *.geojson
