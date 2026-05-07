@@ -13,13 +13,8 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://tax-vision-frontend.onrender.com",
-        "https://taxvision-frontend.onrender.com",
-        "*"
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -33,7 +28,7 @@ app.include_router(green_reward.router, prefix="/api/green",   tags=["Green Rewa
 @app.get("/")
 def root():
     return {
-        "system":  "Smart City Urban Audit",
+        "system":  "TaxVision Smart City Audit",
         "city":    "Nagpur Municipal Corporation",
         "status":  "online",
         "version": "1.0.0"
