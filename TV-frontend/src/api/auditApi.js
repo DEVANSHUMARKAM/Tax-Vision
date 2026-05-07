@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const BASE = "https://tax-vision-frontend.onrender.com/api";  // your actual IP here
-
+const BASE = "https://tax-vision-backend.onrender.com/api";
 export const auditApi = {
   getZones:        ()          => axios.get(`${BASE}/audit/zones`),
   getWards:        (zone_no)   => axios.get(`${BASE}/audit/zones/${zone_no}/wards`),
