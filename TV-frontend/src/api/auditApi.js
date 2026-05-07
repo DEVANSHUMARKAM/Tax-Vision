@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE = "http://127.0.0.1:8000/api";  // your actual IP here
+const BASE = "https://taxvision-backend.onrender.com/api";  // your actual IP here
 
 export const auditApi = {
   getZones:        ()          => axios.get(`${BASE}/audit/zones`),
