@@ -252,7 +252,7 @@ export default function LandingPage() {
                 ? "0 4px 24px rgba(245,73,0,0.35)" : "none"
             }}
           >
-            Explore Ward Dashboard →
+            Explore 
           </button>
         </div>
 
